@@ -78,7 +78,15 @@ Profiel Page
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+goed:
+    - HTML schrijven ging goed
+    - Flexbox gaat lekker
+    - Positioneren gaat lekker
+
+Lastig:
+    - Motivatie
+    - Workload
+    - Plannen
 
 
 ### Agenda voor meeting
@@ -238,3 +246,5 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 3. ...
 
 </details>
+
+

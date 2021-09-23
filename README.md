@@ -102,14 +102,14 @@ Agendapunten:
 
 - Hamburger menu
 - Navigatie
-- 
+
+
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Feedback op individuele pagina's
+- tips over planning
+- tips over het ordenen van de code/css
 
 </details>
 
@@ -123,17 +123,19 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+- grid ging goed, wel beetje onduidelijk wanneer ik het beste bepaalde dingen toe moet passen.
+- JS ging lekker.
+- footer afbeelding gaat helemaal fout.
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Artinjo                                   | Huib                             | klaudija     | Robin            |
+| ---                                       | ---                              | ---                                    | ---              |
+| afbeeldingen positioneren met grid        | Responsive maken en mooi houden  | Tips voor het responsive maken voor desktop    | en dan ik dat    |
+| en dat ook nog                            | Footer afbeelding                | nog een punt | dit wil ik zeker |
+| ...                                       | ...                              | ...          | ...              |
 
 
 ### Verslag van meeting

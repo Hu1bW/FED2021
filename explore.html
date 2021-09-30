@@ -1,42 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles/style_explore.css" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
 
     <title>Explore Page Huib Wezenaar FED 2122</title>
 </head>
 
 <body>
     <header>
-        <img src="" alt="Github Logo">
-        <a href="">Sign Up</a>
-    </header>
+        <h1>
+          <img
+            src="images/GitHub-Mark-Light-64px.png"
+            class="gitHubLogo"
+            alt="GitHub"
+          />
+        </h1>
+  
+        <section>
+          <a href="">Sign Up</a>
+          <button class="menuKnoppie">Menu</button>
+  
+          <nav>
+            <ul class="NavTranslateL">
+              <li></li>
+              <li>Why GitHub?</li>
+              <li>Enterprise</li>
+              <li>Explore</li>
+              <li>Marketplace</li>
+              <li>Priciing</li>
+              <li>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Search"
+                    id="SearchBar"
+                    name="Search"
+                  />
+                </div>
+              </li>
+              <li>
+                <div>
+                  <button>Sign in</button>
+                  <button>Sign up</button>
+                </div>
+              </li>
+            </ul>
+  
+  
+          </nav>
+        </section>
+      </header>
 
     <main>
+
         <section>
-            <nav>
-                <a href="">Explore</a>
-                <a href="">Topics</a>
-                <a href="">Trending</a>
-                <a href="">Collections</a>
-                <a href="">events</a>
-            </nav>
+            <h2>Explore</h2>
+            <ul>
+                <li><a href="">Topics</a></li>
+                <li><a href="">Trending</a></li>
+                <li><a href="">Collections</a></li>
+                <li><a href="">events</a></li>
+             </ul>
         </section>
 
         <section>
             <h2>Here's what's popular on GitHub today...</h2>
-            <img src="" alt="">
+        </section>
+
+        <section>
+            <img src="images/giphy.gif" alt="This will display an animated GIF" />
             <h3>Trending Repository</h3>
             <h2>microsoft / ML-For-Beginners</h2>
-            <a href=""><img src="" alt="">star</a>
+            <div>
+            <a href=""><img src="" alt="" />star</a>
             <a href="">20.5k</a>
-            <nav></nav>
+        </div>
             <article>
-                <p>12 weeks, 25 lessons, 50 quizzes, classic Machine Learning for all</p>
+                <p>
+                    12 weeks, 25 lessons, 50 quizzes, classic Machine Learning for all
+                </p>
+                <article>
                 <a href="">python</a>
                 <a href="">Data-science</a>
                 <a href="">machine learning</a>
@@ -44,73 +92,96 @@
                 <a href="">scikit</a>
                 <a href="">learning</a>
             </article>
-            <footer>
+            
+            <article>
                 <p>updated 2 days ago</p>
                 <p>Jupyter Notebook</p>
-            </footer>
+            </article>
+        </article>
         </section>
 
         <section>
-            <img src="" alt="">
+            <img src="" alt="" />
             <article>
                 <h3>Trending Repository</h3>
                 <h2>trekhleb / javascript-algorithms</h2>
-                <p>Algorithms and data structures implemented in JavaScript with explanations and links to further readings</p>
-                <p>This Binance trading bot detects new coins as soon as they are listed on the Binance exchange and automatically places sell and buy orders. It comes with trailing stop loss and other features. If you like this project please consider donating via Brave.</p>
+                <p>
+                    Algorithms and data structures implemented in JavaScript with
+                    explanations and links to further readings
+                </p>
+                <p>
+                    This Binance trading bot detects new coins as soon as they are
+                    listed on the Binance exchange and automatically places sell and buy
+                    orders. It comes with trailing stop loss and other features. If you
+                    like this project please consider donating via Brave.
+                </p>
             </article>
         </section>
 
         <section>
             <h2>Trending developers</h2>
             <article>
-                <img src="" alt="">
-                <h3>Arvid Norberg</h3>
-                <p>arvidn</p>
-                <a href="">libtorrent</a>
+                <img src="images/Persoon1" alt="Foto van Arvid Norberg" />
+            
+                <div>
+                    <h3>Arvid Norberg</h3>
+                    <p>arvidn</p>
+                    <a href="">libtorrent</a>
+                </div>
             </article>
 
             <article>
-                <img src="" alt="">
-                <h3>Aleksandr Statciuk</h3>
-                <p>freearhey</p>
-                <a href="">iptv-checker</a>
+                <img src="images/Persoon2" alt="Foto van Aleksandr Statciuk" />
+
+                <div>
+                    <h3>Aleksandr Statciuk</h3>
+                    <p>freearhey</p>
+                    <a href="">iptv-checker</a>
+                </div>
             </article>
 
             <article>
-                <img src="" alt="">
-                <h3>PySimpleGUI</h3>
-                <p>PySimpleGUI</p>
-                <a href="">PySimpleGUI</a>
+                <img src="images/Persoon3" alt="Foto van PySimpleGUI" />
+                <div>
+                    <h3>PySimpleGUI</h3>
+                    <p>PySimpleGUI</p>
+                    <a href="">PySimpleGUI</a>
+                </div>
             </article>
 
             <article>
-                <img src="" alt="">
-                <h3>Ha Thach</h3>
-                <p>hathach</p>
-                <a href="">tinyusb</a>
+                <img src="images/Persoon4" alt="Foto van Ha Thach" />
+
+                <div>
+                    <h3>Ha Thach</h3>
+                    <p>hathach</p>
+                    <a href="">tinyusb</a>
+                </div>
+
             </article>
 
             <a href="">See more trending developers</a>
         </section>
     </main>
-    
+
     <footer>
         <h2>GitHub</h2>
-		<ul>
-			<li>Product</li>
-			<li>Features</li>
-			<li>Security</li>
-			<li>Team</li>
-			<li>Enter</li>
-		</ul>
 
-		<ul>
-			<li>Product</li>
-			<li>Features</li>
-			<li>Security</li>
-			<li>Team</li>
-			<li>Enter</li>
-		</ul>
+        <ul>
+            <li>Product</li>
+            <li>Features</li>
+            <li>Security</li>
+            <li>Team</li>
+            <li>Enter</li>
+            <li>Product</li>
+            <li>Features</li>
+            <li>Security</li>
+            <li>Team</li>
+            <li>Enter</li>
+        </ul>
+
     </footer>
+    <script src="scripts/script.js"></script>
 </body>
+
 </html>

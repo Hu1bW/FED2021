@@ -141,10 +141,11 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- We hebben met de student-assistenten overlegt wat we kunnen doen om onze problemen op te kunnen lossen.
+
+- We hebben in de resterende tijd een paar leuke tips en sneltoetsen gekregen om tijd te besparen.
+
+- We hebben uitleg gehad over hoe extenties werken in Visual Studio Code.
 
 </details>
 
@@ -158,8 +159,16 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken na test in 8e voortgang</summary>
 
 ### Bevindingen
-Lijst met je bevindingen die in de test naar voren kwamen:
 
+----hoofdpagina----
+- De Hoofdpagina is goed te zien en de kleuren/contrast hoeven niet verandert te worden.
+- Voorlezer struikelt nog over het uitklap menu.
+- Een aantal knopjes hebben nog geen alt naam.
+- De knopjes zijn goed te bedienen met milde spasmes.
+- De interacties zijn simpel.
+
+----Explore----
+- 
 #### Titel eerste bevinding
 Hier korte omschrijving (met indien nodig een afbeelding)
 
@@ -201,10 +210,10 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+| Artinjo        | Huib               | Klaudija                        | student 4        |
+| ---            | ---                | ---                             | ---              |
+| dit bespreken  | en dit             | SVG                             | en dan ik dat    |
+| en dat ook nog | dit als er tijd is | Grootte responsive schermen     | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
 
 

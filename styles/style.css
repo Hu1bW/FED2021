@@ -50,22 +50,77 @@ header {
 
 header nav ul {
   position: fixed;
-  left: -35px;
-  background-color:whitesmoke;
+  left: -41px;
+  background-color: whitesmoke;
   color: #040D21;
   height: 100%;
-  width: 75vw;
-  top:-1em;
+  width: 90vw;
+  top: -1em;
   flex-wrap: wrap;
-  border:solid silver 2pt ;
-  padding-top: 1.5em;
+  border: solid silver 2pt;
 }
 
 header nav li {
   list-style-type: none;
+  font-size: 14pt;
+  line-height: 2em;
+  border-bottom: solid silver 1pt;
+  padding: .5em;
+  margin: .1em .6em;
+}
+
+
+
+header nav li:first-of-type {
+  padding: 1em;
+  margin: 0;
+  list-style-type: none;
   font-size: 20pt;
   line-height: 2em;
-  border:solid silver 1pt ;
+  border:solid silver 1pt;
+  background-color:rgb(218, 218, 218);
+}
+
+header nav div input {
+  border: black;
+  border-radius: 6px;
+  width: 80vw;
+  height: 2em;
+  padding: 1em;
+  background-color: white;
+}
+
+header nav li:nth-of-type(7) {
+  border: none;
+  padding-bottom: 0;
+}
+
+header nav li:last-of-type {
+  border: none;
+  padding-top: 0;
+}
+
+header nav ul div {
+  display: flex;
+  width: 100%;
+  padding: .75em 0;
+  justify-content: space-around;
+  border: none;
+}
+
+
+header nav ul div button {
+  border: 1px solid silver;
+  background-color: whitesmoke;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-size: 12pt;
+
+}
+
+header nav ul div button:first-of-type {
+border:none;
+background-color: whitesmoke;
 }
 
 header a {
@@ -105,11 +160,6 @@ main p {
 }
 
 
-
-
-
-
-
 /**************  1  ***/
 
 main section:nth-of-type(1) p {
@@ -125,10 +175,6 @@ main section:nth-of-type(1) h2 {
   margin-top: 1.5em;
 }
 
-main :nth-child(2) {
-  margin-bottom: 11em;
-}
-
 main :nth-child(3) {
   display: flex;
   flex-direction: column;
@@ -142,7 +188,7 @@ main :nth-child(3) input {
   border-radius: 1em;
   width: 80vw;
   height: 2em;
-  
+  font-size: 12pt;
 }
 
 main :nth-child(3) a {
@@ -155,10 +201,8 @@ main :nth-child(3) a {
   border-radius: 1em;
   margin:0 0 1em 0;
   text-decoration: none;
+  padding: .3em 0px;
 }
-
-
-
 
 
 
@@ -185,8 +229,6 @@ main section:nth-of-type(2) a:first-of-type {
   text-align: center;
   border-radius: 1em;
 }
-
-
 
 
 
@@ -297,10 +339,8 @@ section:nth-of-type(5) a:nth-of-type(2) {
 }
 
 .footerIllustration {
-  position: absolute;
-  width: 140vw;
-  left:-70px;
-  transform: translateY(-120px);
+  position:relative;
+  top: -90px;
 }
 
 
@@ -314,9 +354,15 @@ section {
 }
 
 footer {
-  background: black;
-  color: white;
-  flex-direction: row;
-  overflow:hidden;
-  max-width: 100vw;
+  background-color: black;
+  color: aliceblue;
+}
+
+footer h2 {
+  padding: 2em;
+  margin: 0;
+}
+
+footer ul {
+  list-style: none;
 }

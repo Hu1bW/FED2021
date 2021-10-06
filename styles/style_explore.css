@@ -454,14 +454,26 @@ section {
   color: azure;
 }
 
+/* 
+******************************************************************
+********************* FOOTER CODE ********************************
+******************************************************************
+*/
+
 footer {
   display: flex;
-  width: 100%;
-  flex-direction: row;
+  width: 100vw;
+  height: 40em;
+  margin-left: -1.5em;
+  flex-direction: column;
   background-color: black;
-  color: white;
-  overflow: hidden;
-  width: 100%;
+  color: aliceblue;
+  border-top: 1px solid blanchedalmond;
+  font-size: 13pt;
+}
+
+footer ul {
+  list-style-type: none;
 }
 
 /* 

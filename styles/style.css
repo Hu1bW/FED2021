@@ -391,6 +391,9 @@ section {
 
 footer {
   display: flex;
+  width: 100vw;
+  height: 40em;
+  margin-left: -1.5em;
   flex-direction: column;
   background-color: black;
   color: aliceblue;

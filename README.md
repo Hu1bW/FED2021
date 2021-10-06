@@ -62,7 +62,7 @@ Profiel Page
 <img src="images/BreakdownSchets2.jpg" width="375px" alt="breakdown van de hele pagina2">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/BreakdownSchetsMenu.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
 
 </details>

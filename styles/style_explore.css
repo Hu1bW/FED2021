@@ -14,7 +14,14 @@ body {
   margin: 0.5em 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-color: #010409;
+  background: rgb(31, 142, 149);
+  background: linear-gradient(
+    65deg,
+    rgba(31, 142, 149, 1) 0%,
+    rgba(5, 2, 43, 1) 42%,
+    rgba(9, 121, 108, 1) 87%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 h1 {
@@ -32,16 +39,16 @@ h3 {
 }
 
 main {
-  margin-top: 2em;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: center;
+  margin-top: 4em;
   overflow-x: hidden;
 }
 
 section {
-  margin: 1em;
+  margin: 0.5em;
 }
 
 /*************************************************/
@@ -49,113 +56,125 @@ section {
 /*************************************************/
 
 header {
-    display: flex;
-    justify-content: space-between;
-   background-color:rgb(23, 23, 23) ;
-    position: fixed;
-    top:0;
-    width: 100vw;
-    height: 60px;
-    z-index: 2;
-    overflow: hidden;
-  }
-  
-  
-  
-  header nav ul {
-    position: fixed;
-    left: -41px;
-    background-color: whitesmoke;
-    color: #040D21;
-    height: 100%;
-    width: 90vw;
-    top: -1em;
-    flex-wrap: wrap;
-    border: solid silver 2pt;
-  }
-  
-  header nav li {
-    list-style-type: none;
-    font-size: 14pt;
-    line-height: 2em;
-    border-bottom: solid silver 1pt;
-    padding: .5em;
-    margin: .1em .6em;
-  }
-  
-  
-  
-  header nav li:first-of-type {
-    padding: 1em;
-    margin: 0;
-    list-style-type: none;
-    font-size: 20pt;
-    line-height: 2em;
-    border:solid silver 1pt;
-    background-color:rgb(218, 218, 218);
-  }
-  
-  header nav div input {
-    border: black;
-    border-radius: 6px;
-    width: 80vw;
-    height: 2em;
-    padding: 1em;
-    background-color: white;
-  }
-  
-  header nav li:nth-of-type(7) {
-    border: none;
-    padding-bottom: 0;
-  }
-  
-  header nav li:last-of-type {
-    border: none;
-    padding-top: 0;
-  }
-  
-  header nav ul div {
-    display: flex;
-    width: 100%;
-    padding: .75em 0;
-    justify-content: space-around;
-    border: none;
-  }
-  
-  
-  header nav ul div button {
-    border: 1px solid silver;
-    background-color: whitesmoke;
-    padding: 8px 10px;
-    border-radius: 5px;
-    font-size: 12pt;
-  
-  }
-  
-  header nav ul div button:first-of-type {
-  border:none;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 60px;
+  background-color: rgb(23, 23, 23);
+  z-index: 2;
+  overflow: hidden;
+}
+
+header section:first-of-type {
+  width: fit-content;
+}
+
+header nav ul {
+  position: fixed;
+  height: 100%;
+  width: 90vw;
+  max-width: 82.5%;
+  left: -41px;
   background-color: whitesmoke;
-  }
-  
-  header a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .NavTranslateL {
-    transform: translateX(-110vw);
-    display: hidden;
-  }
-  
-  .gitHubLogo {
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    left: -30px;
-    top: -35px;
-  }
-  
-  
+  border: solid silver 2pt;
+  color: #040d21;
+
+  transition: 1s;
+}
+
+header nav li {
+  list-style-type: none;
+  padding: 0.5em;
+  margin: 0.1em 0.6em;
+  font-size: 14pt;
+  line-height: 2em;
+  border-bottom: solid silver 1pt;
+}
+
+header nav li:first-of-type {
+  padding: 1em;
+  margin: 0;
+  list-style-type: none;
+
+  background-color: rgb(218, 218, 218);
+  border: solid silver 1pt;
+  font-size: 20pt;
+  line-height: 2em;
+}
+
+header nav div input {
+  border: black;
+  border-radius: 6px;
+  width: 80vw;
+  height: 2em;
+  padding: 1em;
+  background-color: white;
+}
+
+header nav li:nth-of-type(7) {
+  border: none;
+  padding-bottom: 0;
+}
+
+header nav li:last-of-type {
+  border: none;
+  padding-top: 0;
+}
+
+header nav ul div {
+  display: flex;
+  width: 100%;
+  padding: 0.75em 0;
+  border: none;
+  justify-content: space-around;
+}
+
+header nav ul div button {
+  padding: 8px 10px;
+  border: none;
+  background-color: rgb(58, 58, 58);
+
+  border-radius: 5px;
+  font-size: 12pt;
+}
+
+header section button {
+  border: none;
+  background-color: transparent;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+.menuKnoppie {
+  width: 25px;
+  transition: 1s;
+}
+
+.menuKnoppie:hover {
+  width: 35px;
+  transition: 1s;
+}
+
+.NavTranslateL {
+  display: hidden;
+  transform: translateX(-110vw);
+
+  transition: 1s;
+}
+
+.gitHubLogo {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  left: -30px;
+  top: -35px;
+}
+
 /*************************************************/
 /* --------- STYLING VOOR DE MAIN ----------- */
 /*************************************************/
@@ -174,21 +193,39 @@ main p {
 }
 
 main section:first-of-type h2 {
-text-align: center;
-width: 100vw;
+  width: 100vw;
+  text-align: center;
+  font-size: 25pt;
 }
 
 main section:first-of-type ul {
-display: flex;
-list-style: none;
-justify-content:space-evenly;
-width: 85vw;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-evenly;
+  width: 85vw;
+}
+
+main section:first-of-type ul li {
+  padding: 0.5em 1em;
+  font-size: 20pt;
+}
+
+main section:first-of-type ul li:hover {
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: rgb(223, 65, 37);
+  border-radius: 1em;
+  font-size: 24pt;
+  transform: rotate(360deg);
+  transition: 0.5s;
 }
 
 main section:first-of-type a {
+  display: inline-block;
   text-decoration: none;
   flex-grow: 1;
-  display: inline-block;
+
   color: lightskyblue;
 }
 
@@ -205,7 +242,6 @@ section:nth-of-type(2) {
 
 main h2:first-of-type {
   position: relative;
-  margin-top: 2em;
   font-size: 14pt;
 }
 
@@ -213,10 +249,13 @@ main h2:first-of-type {
 /**--------------2----------------------**/
 /*****************************************/
 section:nth-of-type(3) {
-  border: 1px solid rgb(58, 58, 58);
-  border-radius: 1em;
-  overflow: hidden;
   display: flex;
+
+  overflow: hidden;
+
+  background-color: rgb(43, 45, 58);
+  border: 1px solid rgb(193, 193, 193);
+  border-radius: 1em;
   text-align: center;
 }
 
@@ -229,133 +268,360 @@ section:nth-of-type(3) img {
 }
 
 section:nth-of-type(3) div a:first-of-type {
-color: lightsteelblue;
-text-decoration: none;
-padding: 10px;
-border:2px solid lightsteelblue;
-border-radius: 1em 0 0 1em;
-transform:translateX(2px);
+  color: lightsteelblue;
+  text-decoration: none;
+  padding: 10px;
+  border: 2px solid lightsteelblue;
+  border-radius: 1em 0 0 1em;
+  transform: translateX(2px);
+  transition: 0.3s;
+}
+
+section:nth-of-type(3) div a:first-of-type:hover {
+  color: #040d21;
+  background-color: rgb(44, 121, 203);
+  font-weight: bold;
+  border: 1px solid transparent;
+  transition: 0.3s;
 }
 
 section:nth-of-type(3) div a:nth-of-type(2) {
-color: lightsteelblue;
-text-decoration: none;
-padding: 10px;
-border:2px solid lightsteelblue;
-border-radius: 0 1em 1em 0;
+  color: lightsteelblue;
+  text-decoration: none;
+  padding: 10px;
+  border: 2px solid lightsteelblue;
+  border-radius: 0 1em 1em 0;
+  transition: 0.3s;
+}
+
+section:nth-of-type(3) div a:nth-of-type(2):hover {
+  color: #040d21;
+  background-color: rgb(44, 121, 203);
+  font-weight: bold;
+  border: 1px solid transparent;
+  transition: 0.3s;
 }
 
 section:nth-of-type(3) div {
-display: flex;
-justify-content: flex-end;
-width: 90vw;
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
 }
 
 section:nth-of-type(3) h2 {
-width: 90vw;
+  width: 100%;
+  transition: 0.3s;
+  text-decoration: underline;
 }
 
-section:nth-of-type(3) article a{
-color: lightsteelblue;
-text-decoration: none;
-gap:1em;
+section:nth-of-type(3) h2:hover {
+  width: 100%;
+  border-radius: 0.5em;
+  color: tomato;
+  transform: skew(15deg);
+  transition: 0.3s;
+}
+
+section:nth-of-type(3) article a {
+  margin-top: 0.3em;
+  padding: 0.5em;
+  background-color: rgb(58, 58, 58);
+  border: 1px solid silver;
+  border-radius: 1em;
+  color: lightsteelblue;
+  text-decoration: none;
+  line-height: 3em;
+
+  transition: 0.3s;
+}
+
+section:nth-of-type(3) article a:hover {
+  padding: 0.5em;
+  background-color: rgb(44, 121, 203);
+  border: 1px solid rgb(53, 53, 53);
+  border-radius: 1em;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 2em;
+
+  transform: scaleX(2);
+  transition: 0.3s;
 }
 
 section:nth-of-type(3) footer {
-display: flex;
-flex-direction: column;
-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
 }
-
 
 /*****************************************/
 /**--------------3----------------------**/
 /*****************************************/
 
 section:nth-of-type(4) {
-display: flex;
-padding: 1em;
-margin: .5em;
-border: .5px solid rgba(58, 58, 58, 0.31);
-border-radius: 1em;
-overflow: hidden;
+  display: flex;
+  padding: 1em;
+  margin: 0.5em;
+
+  background-color: rgb(43, 45, 58);
+  border: 1px solid rgb(193, 193, 193);
+  border-radius: 1em;
+  overflow: hidden;
 }
 
-section:nth-of-type(4) h3{
-position: relative;
-display: block;
-width: 110%;
-background-color:rgba(58, 58, 58, 0.31) ;
-margin: -5%;
-padding-top: 2em;
-padding-left: 2em;
-height: 5em;
+section:nth-of-type(4) h3 {
+  height: 2em;
+  padding-left: 2em;
+  padding-top: 0.3em;
+
+  width: 120%;
+  background-color: rgba(58, 58, 58, 0.31);
+  font-size: 15pt;
+  transform: translate(-20px, -35px);
 }
 /*****************************************/
 /**--------------4----------------------**/
 /*****************************************/
 
 section:nth-of-type(5) {
-display: flex;
-padding: 1em;
-margin: .5em;
-border: .5px solid rgb(58, 58, 58);
-border-radius: 1em;
-overflow: hidden;
-gap: .75em;
-max-width: 400px;
+  display: flex;
+  padding: 1em;
+  margin: 0.5em;
+  max-width: 100%;
+  background-color: rgb(43, 45, 58);
+  border: 1px solid rgb(193, 193, 193);
+  border-radius: 1em;
+  overflow: hidden;
+  gap: 0.75em;
 }
 
-section:nth-of-type(5) h2{
-position: relative;
-display: block;
-width: 110%;
-background-color:rgba(58, 58, 58, 0.31) ;
-margin: -5%;
-padding-top: 1em;
-padding-left: 2em;
-height: 3em;
-margin-bottom: .5em;
+section:nth-of-type(5) h2 {
+  position: relative;
+  display: block;
+  margin: -5%;
+  padding-top: 1em;
+  padding-left: 2em;
+  height: 3em;
+  margin-bottom: 0.5em;
+  width: 110%;
+  background-color: rgba(58, 58, 58, 0.31);
 }
 
-section:nth-of-type(5) article{
-display: flex;
-flex-direction: row;
-gap: 2em;
-padding: 10px;
-border: 1px solid rgb(58, 58, 58);
-border-radius: .5em;
-width: 100%;
+section:nth-of-type(5) article {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  padding: 10px;
+  max-width: 140%;
+  border: 1px solid rgb(58, 58, 58);
+  border-radius: 0.5em;
 }
 
-section:nth-of-type(5) article div{
-display: flex;
-flex-direction: column;
+section:nth-of-type(5) article div {
+  display: flex;
+  flex-direction: column;
 }
 
-section:nth-of-type(5) article a{
-display: flex;
-flex-direction: column;
-text-decoration: none;
-color:rgb(121, 121, 121);
+section:nth-of-type(5) article a {
+  display: flex;
+  flex-direction: column;
+  color: rgb(121, 121, 121);
+  text-decoration: none;
 }
 
-section:nth-of-type(5) article img{
-border-radius: .5em;
+section:nth-of-type(5) article img {
+  border-radius: 0.5em;
+}
+
+section:nth-of-type(5) a {
+  color: lightsteelblue;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+section:nth-of-type(5) a:hover {
+  color: tomato;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 section {
-  color: azure;
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
   flex-wrap: wrap;
+  color: azure;
 }
 
 footer {
-  background: black;
-  color: white;
+  display: flex;
+  width: 100%;
   flex-direction: row;
+  background-color: black;
+  color: white;
   overflow: hidden;
-  max-width: 100vw;
+  width: 100%;
+}
+
+/* 
+******************************************************************
+********************* MediaQuery 400px ***************************
+******************************************************************
+*/
+
+@media only screen and (min-width: 400px) {
+  p {
+    font-weight: 400;
+    font-size: larger;
+  }
+
+  header {
+    margin: 0;
+  }
+
+  section {
+    margin: 0.5em 3em;
+    transition: 1s;
+  }
+
+  main section:first-of-type {
+    position: relative;
+    left: 0;
+    margin: 0;
+  }
+
+  main section:nth-of-type(4) {
+    margin: 3em;
+    margin-top: 1.7em;
+  }
+
+  main section:nth-of-type(5) {
+    margin: 3em;
+    margin-top: 1.7em;
+  }
+}
+
+/* 
+******************************************************************
+********************* MediaQuery 1000px ***************************
+******************************************************************
+*/
+
+@media only screen and (min-width: 1000px) {
+  section {
+    margin: 0.5em 10em;
+    transition: 1s;
+  }
+
+  main section:nth-of-type(4) {
+    padding: 2em;
+    margin: 2em 10em;
+  }
+
+  main section:nth-of-type(5) {
+    padding: 2em;
+    margin: 2em 10em;
+  }
+
+  section:nth-of-type(5) {
+    max-width: 100%;
+    flex-grow: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+
+  header nav ul {
+    display: flex;
+    position: fixed;
+    width: 103vw;
+    max-width: 103vw;
+    height: 3em;
+    top: 2.5em;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    background-color: #0d1c3e;
+
+    border: none;
+    transition: 0.2s;
+  }
+
+  header nav ul li {
+    display: inline;
+    padding: 0em 1em;
+    color: silver;
+    font-size: 15pt;
+  }
+
+  header nav ul li:nth-of-type(1) {
+    background-color: transparent;
+    border: none;
+  }
+
+  header nav ul li:hover {
+    background-color: #3237cd;
+    transition: 0.4s;
+  }
+
+  header nav ul li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+  }
+
+  header nav ul li input {
+    display: inline;
+    width: 250px;
+    margin-top: -0.3em;
+  }
+
+  header nav ul li div {
+    display: flex;
+    gap: 0.5em;
+    margin-left: 1em;
+    justify-content: space-between;
+  }
+
+  header nav ul li div button {
+    display: inline;
+    width: 65px;
+    padding: 0.5em;
+    margin-top: -0.2em;
+    font-size: 8pt;
+  }
+
+  header nav li:first-of-type {
+    padding: 1em;
+    margin: 0;
+    list-style-type: none;
+    font-size: 20pt;
+    line-height: 2em;
+    border: solid silver 1pt;
+    background-color: rgb(218, 218, 218);
+  }
+
+  header nav div input {
+    border-radius: 6px;
+    width: 80vw;
+    height: 2em;
+    padding: 1em;
+    background-color: white;
+  }
+  .NavTranslateL {
+    transform: translateX(0vw);
+    display: flex;
+    transition: 0.5s;
+  }
+
+  main section:first-of-type h2 {
+    margin-top: 2em;
+  }
+
+  header section button,
+  header section a {
+    opacity: 0;
+  }
 }

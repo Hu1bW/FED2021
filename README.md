@@ -58,13 +58,12 @@ Profiel Page
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="images/BreakdownSchets1.jpg" width="375px" alt="breakdown van de hele pagina1">
+<img src="images/BreakdownSchets2.jpg" width="375px" alt="breakdown van de hele pagina2">
 
 ### dynamisch deel (bijv menu): 
 <img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -131,11 +130,11 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| Artinjo                                   | Huib                             | klaudija     | Robin            |
-| ---                                       | ---                              | ---                                    | ---              |
+| Artinjo                                   | Huib                             | klaudija                                       | Robin            |
+| ---                                       | ---                              | ---                                            | ---              |
 | afbeeldingen positioneren met grid        | Responsive maken en mooi houden  | Tips voor het responsive maken voor desktop    | en dan ik dat    |
-| en dat ook nog                            | Footer afbeelding                | nog een punt | dit wil ik zeker |
-| ...                                       | ...                              | ...          | ...              |
+| en dat ook nog                            | Footer afbeelding                | nog een punt                                   | dit wil ik zeker |
+| ...                                       | ...                              | ...                                            | ...              |
 
 
 ### Verslag van meeting
@@ -160,6 +159,8 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Bevindingen
 
+Safari vind mijn site minder leuk dan Chrome.
+
 ----hoofdpagina----
 - De Hoofdpagina is goed te zien en de kleuren/contrast hoeven niet verandert te worden.
 - Voorlezer struikelt nog over het uitklap menu.
@@ -168,29 +169,43 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 - De interacties zijn simpel.
 
 ----Explore----
-- 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+- Het kleurcontrast van de Explore pagina is niet zo goed gedaan dat je goed de secties kan ondescheiden.
+- Het kleurcontrast van het font is wel goed.
+- De knopjes en linkjes zijn aan de kleine kant waardoor deze niet goed te bedienen zijn met milde spasmes.  
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### Kleurcontrast
+Het kleurcontrast op de hoofdpagina is goed, de verschillende elementen zijn goed van elkaar te onderscheiden met grijswaarden.
+Hierdoor is alle content goed te lezen door mensen met (gedeeltelijke) kleurenblindheid.
+<img src="images/ContrastVoorbeeld.png" width="375px" alt="Contrast voorbeeld">
+
+Het kleurcontrast op de Explore pagina was niet zo goed, daardoor was de content niet goed te zien door mensen met (gedeeltelijke) kleurenblindheid.
+Na deze bevinding gedaan te hebben heb ik de pagina er anders laten uitzien ten opzichte van het origineel door meer contrast toe te voegen tussen
+de voor- en achtergrond.<br>
+Dit is het origineel, die vond ik niet zo goed leerbaar met de kleurenblind bril(geel) op:
+<img src="images/ExplorePageOriginal.png" width="375px" alt="Contrast voorbeeld2">
+Dit is de aangepaste versie, ik heb meer contrast toegevoegd:
+<img src="images/ExplorePageNieuw.png" width="375px" alt="Contrast voorbeeld2">
 
 
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Spasmes
+Als een persoon spasmes heeft kan hij/zij niet zo goed navigeren met de muis en hierdoor lukt het vaak niet om kleine knopjes in te drukken.<br>
+Ik heb de hyperlink navigatie knopjes groter gemaakt voor zowel de computer, waar ze iets groter zijn en met een grotere padding, en voor de
+mobiele telefoon waarbij ze veel groter zijn en onder elkaar komen te staan voor snelle navigatie over een lange pagina, aangezien het hyperlinks
+zijn die je naar het desbetreffende artiekel leiden.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+<img src="images/ExplorePageNieuw.png" width="375px" alt="Grotere knopjes">
 
+#### Aandacht 
+Mensen met een aandacht stoornis kunnen vaak moeilijk hun focus bij de site houden als er iets anders gaande is in hun omgeving.
+Github houdt hier geen rekening mee omdat er een hele boel kleine elementjes en linkjes en knopjes aanwezig zijn die je moet opzoeken als
+je ergens specifiek naar opzoek bent.
+<br>
 
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+<img src="images/ExplorePageOriginal.png" width="375px" alt="Contrast voorbeeld2">
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+De elementen zouden groter gemaakt kunnen worden en duidelijker een focus krijgen. De vraag is of dit wel zin zou hebben bij Github omdat
+het toch wel een site is voor codeurs die al een beetje weten wat ze doen en als je de elementen veranderd denk ik dat je het grootste deel van
+de bezoekers hiermee irriteert.
 
 </details>
 
@@ -210,20 +225,18 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| Artinjo        | Huib               | Klaudija                        | student 4        |
+| Artinjo        | Huib               | Klaudija                        | Robin            |
 | ---            | ---                | ---                             | ---              |
 | dit bespreken  | en dit             | SVG                             | en dan ik dat    |
 | en dat ook nog | dit als er tijd is | Grootte responsive schermen     | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| ...            | ...                | ...                             | ...              |
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- We zijn over de benodigheden gegaan die we nodig hebben om een voldoende te kunnen halen.
+- De vragen die we hadden zijn beantwoord maar verder was het een korte meeting waar we niet veel hebben besproken.
 
 </details>
 
@@ -256,9 +269,12 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. http://Github.com, Ik heb de footer afbeelding van de hoofdpagina geleend van de originele site.
+2. https://github.com/explore Ik heb de profielfotos van de trending programmers gebruikt.
+3. https://www.wallpaperflare.com/earth-moon-nature-hd-4k-digital-universe-space-planet-space-wallpaper-hrwph Gebruikt voor de afbeelding op de hoofdpagina.
+4. https://www.pexels.com/photo/wonderful-starry-sky-at-night-5362479/ Gebruikt op de hoofdpagina als achtergrond bij de contribute section.
+5. https://www.giphy.com Gebruikt voor het windows logo op de explore pagina.
+6. https://commons.wikimedia.org/wiki/File:Hamburger_icon_white.svg voor het witte hamburger menu's
 
 </details>
 
